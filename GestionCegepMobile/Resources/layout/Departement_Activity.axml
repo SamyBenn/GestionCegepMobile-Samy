@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Departement"
+        android:layout_width="match_parent"
+        android:layout_height="50.9dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/textViewNomDep" />
+    <TableRow
+            android:id="@+id/tableRowNoDepart"
+            android:layout_height="93.0dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Numero :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="0"
+                android:id="@+id/lblNoDepart"
+                android:layout_marginRight="0.0dp"
+                android:layout_marginLeft="0.0dp"
+                android:layout_width="105.0dp"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginTop="0.0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_column="1"
+                android:id="@+id/lblNoDepartInfo"
+                android:layout_height="40.5dp"
+                android:layout_width="202.5dp"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginTop="0.0dp"
+                android:layout_marginRight="0.0dp"/>
+        </TableRow><TableRow
+            android:id="@+id/tableRowNomDepart"
+            android:layout_height="93.0dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Nom :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="0"
+                android:id="@+id/lblNomDepart"
+                android:layout_marginRight="0.0dp"
+                android:layout_marginLeft="0.0dp"
+                android:layout_width="105.0dp"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginTop="0.0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_column="1"
+                android:id="@+id/lblNomDepartInfo"
+                android:layout_height="40.5dp"
+                android:layout_width="202.5dp"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginTop="0.0dp"
+                android:layout_marginRight="0.0dp"/>
+        </TableRow><TableRow
+            android:id="@+id/tableRowDescDepart"
+            android:layout_height="93.0dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Description :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="0"
+                android:id="@+id/lblDescDepart"
+                android:layout_marginRight="0.0dp"
+                android:layout_marginLeft="0.0dp"
+                android:layout_width="105.0dp"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginTop="0.0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_column="1"
+                android:id="@+id/lblDescDepartInfo"
+                android:layout_height="40.5dp"
+                android:layout_width="202.5dp"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginTop="0.0dp"
+                android:layout_marginRight="0.0dp"/>
+        </TableRow>
+</LinearLayout>
