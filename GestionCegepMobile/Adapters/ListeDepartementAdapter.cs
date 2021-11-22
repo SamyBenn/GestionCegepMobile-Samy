@@ -10,8 +10,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/// <summary>
+/// Namespace pour les adapteurs
+/// </summary>
 namespace GestionCegepMobile.Adapters
 {
+    /// <summary>
+    /// Classe représentant un adapteur pour une liste de departements
+    /// </summary>
     class ListeDepartementAdapter : BaseAdapter<DepartementDTO>
     {
         /// <summary>
@@ -19,57 +25,57 @@ namespace GestionCegepMobile.Adapters
         /// </summary>
 		private Activity context;
         /// <summary>
-        /// Attribut représentant la liste de Cegeps.
+        /// Attribut représentant la liste de departements.
         /// </summary>
-		private DepartementDTO[] listeDep;
+		private DepartementDTO[] listeDepartement;
 
         /// <summary>
         /// Constructeur de la classe. 
         /// </summary>
         /// <param name="context">Contexte.</param>
-        /// <param name="acteurs">Liste des Cégeps.</param>
+        /// <param name="acteurs">Liste des departements.</param>
 		public ListeDepartementAdapter(Activity unContext, DepartementDTO[] uneListeDep)
         {
             context = unContext;
-            listeDep = uneListeDep;
+            listeDepartement = uneListeDep;
         }
 
         /// <summary>
-        /// Méthode réécrite de la classe BaseAdapter permettant d'accéder à un élément de la liste de Cégeps selon un index.
+        /// Méthode réécrite de la classe BaseAdapter permettant d'accéder à un élément de la liste de departements selon un index.
         /// </summary>
         /// <param name="index">Index de la garderie.</param>
-        /// <returns>Retourne un CegepDTO contenant les informations du Cégep selon l'index passé en paramètre.</returns>
+        /// <returns>Retourne un DepartementDTO contenant les informations du departement selon l'index passé en paramètre.</returns>
 		public override DepartementDTO this[int index]
         {
-            get { return listeDep[index]; }
+            get { return listeDepartement[index]; }
         }
 
         /// <summary>
-        /// Méthode réécrite de la classe BaseAdapter permettant d'obtenir le Id d'un Cégep selon une position.
+        /// Méthode réécrite de la classe BaseAdapter permettant d'obtenir le Id d'un departement selon une position.
         /// </summary>
         /// <param name="position">Position du Cégep.</param>
-        /// <returns>Retourne le ID du Cégep à la position demandée.</returns>
+        /// <returns>Retourne le ID du departement à la position demandée.</returns>
 		public override long GetItemId(int position)
         {
             return position;
         }
 
         /// <summary>
-        /// Méthode réécrite de la classe BaseAdapter permettant d'obtenir le nombre de Cégep(s) dans la liste.
+        /// Méthode réécrite de la classe BaseAdapter permettant d'obtenir le nombre de departement(s) dans la liste.
         /// </summary>
-        /// <returns>Retourne le nombre de Cégep(s) dans la liste.</returns>
+        /// <returns>Retourne le nombre de departement(s) dans la liste.</returns>
 		public override int Count
         {
-            get { return listeDep.Length; }
+            get { return listeDepartement.Length; }
         }
 
         /// <summary>
-        /// Méthode réécrite de la classe BaseAdapter permettant d'obtenir le visuel d'un Cégep.
+        /// Méthode réécrite de la classe BaseAdapter permettant d'obtenir le visuel d'un departement.
         /// </summary>
-        /// <param name="position">Position du Cégep.</param>
+        /// <param name="position">Position du departement.</param>
         /// <param name="convertView">Vue.</param>
         /// <param name="parent">Parent de la vue.</param>
-        /// <returns>Retourne une vue construite avec les données d'un Cégep.</returns>
+        /// <returns>Retourne une vue construite avec les données d'un departement.</returns>
 		public override View GetView(int position, View convertView, ViewGroup parent)
         {
             View view =
@@ -77,7 +83,7 @@ namespace GestionCegepMobile.Adapters
                    context.LayoutInflater.Inflate(
                         Resource.Layout.ListeCegepItem, parent, false)) as LinearLayout;
 
-            view.FindViewById<TextView>(Resource.Id.tvNomCegep).Text = listeDep[position].Nom;
+            view.FindViewById<TextView>(Resource.Id.tvNomCegep).Text = listeDepartement[position].Nom;
 
             return view;
         }

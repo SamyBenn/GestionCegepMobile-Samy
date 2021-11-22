@@ -88,7 +88,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vues\CegepDetailsActivity.cs" />
     <Compile Include="Vues\CegepModifierActivity.cs" />
-    <Compile Include="Vues\DepartementActivity.cs" />
+    <Compile Include="Vues\DepartementDetailsActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -161,7 +161,7 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Departement_Activity.axml">
+    <AndroidResource Include="Resources\layout\DepartementDetails_Activity.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

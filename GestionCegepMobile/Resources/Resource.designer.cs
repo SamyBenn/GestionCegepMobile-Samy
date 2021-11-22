@@ -2254,7 +2254,7 @@ namespace GestionCegepMobile
 			public const int listViewCegep = 2131165318;
 			
 			// aapt resource value: 0x7F070087
-			public const int listViewCegepAfficher = 2131165319;
+			public const int listViewDepartementAfficher = 2131165319;
 			
 			// aapt resource value: 0x7F070088
 			public const int list_item = 2131165320;
@@ -2702,11 +2702,11 @@ namespace GestionCegepMobile
 			// aapt resource value: 0x7F09001C
 			public const int Cegep_Activity = 2131296284;
 			
+			// aapt resource value: 0x7F09001F
+			public const int DepartementDetails_Activity = 2131296287;
+			
 			// aapt resource value: 0x7F090020
 			public const int DepartementModifier_Activity = 2131296288;
-			
-			// aapt resource value: 0x7F09001F
-			public const int Departement_Activity = 2131296287;
 			
 			// aapt resource value: 0x7F090021
 			public const int ListeCegepItem = 2131296289;

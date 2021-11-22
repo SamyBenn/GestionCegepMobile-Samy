@@ -11,13 +11,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/// <summary>
+/// Namespace pour les classes de type Vue.
+/// </summary>
 namespace GestionCegepMobile.Vues
 
 {   /// <summary>
     /// Classe de type Activité pour la gestion d'un Département.
     /// </summary>
     [Activity(Label = "@string/app_name")]
-    public class DepartementActivity : AppCompatActivity
+    public class DepartementDetailsActivity : AppCompatActivity
     {
         /// <summary>
         /// Attribut représentant le numero du departement
@@ -39,7 +42,7 @@ namespace GestionCegepMobile.Vues
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.Departement_Activity);
+            SetContentView(Resource.Layout.DepartementDetails_Activity);
 
             NoDep = FindViewById<TextView>(Resource.Id.lblNoDepartInfo);
             NomDep = FindViewById<TextView>(Resource.Id.lblNomDepartInfo);
