@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Adapters\ListeCegepAdapter.cs" />
     <Compile Include="Adapters\ListeDepartementAdapter.cs" />
+    <Compile Include="Adapters\ListeEnseignantAdapter.cs" />
     <Compile Include="Controleurs\CegepControleur.cs" />
     <Compile Include="DAOs\CegepRepository.cs" />
     <Compile Include="DAOs\CoursRepository.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Vues\CegepDetailsActivity.cs" />
     <Compile Include="Vues\CegepModifierActivity.cs" />
     <Compile Include="Vues\DepartementDetailsActivity.cs" />
+    <Compile Include="Vues\DepartementModifierActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -164,6 +166,12 @@
     <AndroidResource Include="Resources\layout\DepartementDetails_Activity.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\DepartementDetails_ActivityMenu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\DepartementModifier_ActivityMenu.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

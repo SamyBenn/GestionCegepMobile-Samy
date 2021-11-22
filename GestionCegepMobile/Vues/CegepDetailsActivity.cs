@@ -121,11 +121,12 @@ namespace GestionCegepMobile.Vues
             listViewDepartement = FindViewById<ListView>(Resource.Id.listViewDepartementAfficher);
             listViewDepartement.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) =>
             {
-                Intent activiteDepartement = new Intent(this, typeof(DepartementDetailsActivity));
+                Intent activiteDepartementDetails = new Intent(this, typeof(DepartementDetailsActivity));
                 //On initialise les paramètres avant de lancer la nouvelle activité.
-                activiteDepartement.PutExtra("paramNomDep", listeDepartement[e.Position].Nom);
+                activiteDepartementDetails.PutExtra("paramNomCegep", leCegep.Nom);
+                activiteDepartementDetails.PutExtra("paramNomDepartement", listeDepartement[e.Position].Nom);
                 //On démarre la nouvelle activité.
-                StartActivity(activiteDepartement);
+                StartActivity(activiteDepartementDetails);
             };
 
             edtNoDepartement = FindViewById<EditText>(Resource.Id.edtNoDepInfo);
@@ -203,7 +204,9 @@ namespace GestionCegepMobile.Vues
             {
                 case Resource.Id.Modifier:
                     Intent activiteModifier = new Intent(this, typeof(CegepModifierActivity));
+                    //On initialise les paramètres avant de lancer la nouvelle activité.
                     activiteModifier.PutExtra("paramNomCegep", leCegep.Nom);
+                    //On démarre la nouvelle activité.
                     StartActivity(activiteModifier);
                     break;
 

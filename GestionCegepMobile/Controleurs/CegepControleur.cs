@@ -219,6 +219,11 @@ namespace ProjetCegep.Controleurs
             DepartementRepository.Instance.SupprimerDepartement(nomCegep, new DepartementDTO(new Departement(unNom: nomDepartement)));
         }
 
+        public void ModifierDepartement(string nomCegep, DepartementDTO leDep)
+        {
+            DepartementRepository.Instance.ModifierDepartement(nomCegep, leDep);
+        }
+
         #endregion MethodesDepartement
 
         #region MethodesEnseignant

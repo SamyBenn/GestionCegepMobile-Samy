@@ -16,10 +16,10 @@
             android:gravity="center_horizontal"
             android:layout_width="match_parent">
             <TextView
-                android:text="Nom :"
+                android:text="Numero :"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_column="0"
-                android:id="@+id/lblNoDepart"
+                android:id="@+id/lblNoDepartement"
                 android:layout_marginRight="0.0dp"
                 android:layout_marginLeft="0.0dp"
                 android:layout_width="105.0dp"
@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content" />
             <EditText
                 android:layout_column="1"
-                android:id="@+id/edtNoDepart"
+                android:id="@+id/edtNoDepartement"
                 android:layout_height="40.5dp"
                 android:layout_width="202.5dp"
                 android:layout_marginBottom="0.0dp"
@@ -43,7 +43,7 @@
                 android:text="Nom :"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_column="0"
-                android:id="@+id/lblNomDepart"
+                android:id="@+id/lblNomDepartement"
                 android:layout_marginRight="0.0dp"
                 android:layout_marginLeft="0.0dp"
                 android:layout_width="105.0dp"
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content" />
             <EditText
                 android:layout_column="1"
-                android:id="@+id/edtNomDepart"
+                android:id="@+id/edtNomDepartement"
                 android:layout_height="40.5dp"
                 android:layout_width="202.5dp"
                 android:layout_marginBottom="0.0dp"
@@ -64,10 +64,10 @@
             android:gravity="center_horizontal"
             android:layout_width="match_parent">
             <TextView
-                android:text="Nom :"
+                android:text="Description :"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_column="0"
-                android:id="@+id/lblDescDepart"
+                android:id="@+id/lblDescriptionDepartement"
                 android:layout_marginRight="0.0dp"
                 android:layout_marginLeft="0.0dp"
                 android:layout_width="105.0dp"
@@ -76,11 +76,19 @@
                 android:layout_height="wrap_content" />
             <EditText
                 android:layout_column="1"
-                android:id="@+id/edtDescDepart"
+                android:id="@+id/edtDescriptionDepartement"
                 android:layout_height="40.5dp"
                 android:layout_width="202.5dp"
                 android:layout_marginBottom="0.0dp"
                 android:layout_marginTop="0.0dp"
                 android:layout_marginRight="0.0dp"/>
         </TableRow>
+    <Button
+		android:text="MODIFIER"
+		android:layout_width="144.5dp"
+		android:layout_height="38.0dp"
+		android:id="@+id/btnModifier"
+		android:layout_marginLeft="128.0dp"
+		android:layout_marginTop="26.0dp"
+		android:layout_marginBottom="0.0dp" />
 </LinearLayout>
