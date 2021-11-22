@@ -71,7 +71,7 @@ namespace GestionCegepMobile.Adapters
         }
 
         /// <summary>
-        /// Méthode réécrite de la classe BaseAdapter permettant d'obtenir le visuel d'un enseignant.
+        /// Méthode réécrite de la classe BaseAdapter permettant d'obtenir le visuel d'un Enseignant.
         /// </summary>
         /// <param name="position">Position de l'enseignant.</param>
         /// <param name="convertView">Vue.</param>

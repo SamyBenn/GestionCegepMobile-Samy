@@ -91,6 +91,7 @@
     <Compile Include="Vues\CegepModifierActivity.cs" />
     <Compile Include="Vues\DepartementDetailsActivity.cs" />
     <Compile Include="Vues\DepartementModifierActivity.cs" />
+    <Compile Include="Vues\EnseignantActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -172,6 +173,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\menu\DepartementModifier_ActivityMenu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Enseignant_Activity.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
