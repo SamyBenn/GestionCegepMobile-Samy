@@ -92,6 +92,8 @@
     <Compile Include="Vues\DepartementDetailsActivity.cs" />
     <Compile Include="Vues\DepartementModifierActivity.cs" />
     <Compile Include="Vues\EnseignantActivity.cs" />
+    <Compile Include="Vues\EnseignantDetailsActivity.cs" />
+    <Compile Include="Vues\EnseignantModifierActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -176,6 +178,22 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Enseignant_Activity.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\Enseignant_ActivityMenu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\EnseignantDetails_ActivityMenu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\EnseignantDetails_activity.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\EnseignantModifier_Activity.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
