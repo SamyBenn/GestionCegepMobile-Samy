@@ -155,11 +155,14 @@ namespace GestionCegepMobile.Vues
             switch (item.ItemId)
             {
                 case Resource.Id.Modifier:
-                    Intent activiteModifier = new Intent(this, typeof(CegepModifierActivity));
+                Intent activiteModifier = new Intent(this, typeof(EnseignantModifierActivity));
                     //On initialise les paramètres avant de lancer la nouvelle activité.
-                    activiteModifier.PutExtra("paramNomCegep", enseignant.Nom);
+                    activiteModifier.PutExtra("paramNomCegep", paramNomCegep);
+                    activiteModifier.PutExtra("paramNomDepartement", paramNomDepartement);
+                    activiteModifier.PutExtra("paramNoEnseignant", enseignant.NoEmploye.ToString());
                     //On démarre la nouvelle activité.
                     StartActivity(activiteModifier);
+            
                     break;
 
                 case Resource.Id.Supprimer:
