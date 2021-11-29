@@ -18,6 +18,7 @@ namespace GestionCegepMobile.Vues
     /// <summary>
     /// Classe de type Activité pour l'affichage des Cégeps et l'ajout d'un Cégep.
     /// </summary>
+    [Activity(Label = "@string/app_name")]
     class CoursActivity : AppCompatActivity
     {
         /// <summary>
@@ -73,18 +74,20 @@ namespace GestionCegepMobile.Vues
 
             paramNomCegep = Intent.GetStringExtra("paramNomCegep");
             paramNomDepartement = Intent.GetStringExtra("paramNomDepartement");
+            listViewCours = FindViewById<ListView>(Resource.Id.listViewCours);
             edtNomCours = FindViewById<EditText>(Resource.Id.edtNomInfo);
             edtNoCours = FindViewById<EditText>(Resource.Id.edtNoInfo);
             edtDescriptionCours = FindViewById<EditText>(Resource.Id.edtDescriptionInfo);
             btnAjouterCours = FindViewById<Button>(Resource.Id.btnAjouter);
             btnAjouterCours.Click += delegate
             {
-                if (edtNomCours.Text.Length>0 && edtNoCours.Text.Length>0 && edtDescriptionCours.Text.Length>0)
+                if (edtNomCours.Text.Length > 0 && edtNoCours.Text.Length > 0 && edtDescriptionCours.Text.Length > 0)
                 {
                     try
                     {
                         CegepControleur.Instance.AjouterCours(paramNomCegep, paramNomDepartement, new CoursDTO(edtNoCours.Text, edtNomCours.Text, edtDescriptionCours.Text));
                         DialoguesUtils.AfficherToasts(this, edtNomCours.Text + " ajouté !!!");
+                        RafraichirInterfaceDonnees();
                     }
                     catch (Exception)
                     {
