@@ -25,7 +25,7 @@ namespace ProjetCegep.DAOs
         /// </summary>
         protected Repository()
         {
-            connexion = new SqlConnection("Server = 192.168.101.71; Database = CegepExamen; User Id=Samy;Password=Patate1230;");
+            connexion = new SqlConnection("Server = 10.172.80.121; Database = CegepExamen; User Id=Samy;Password=Patate1230;");
         }
 
         #endregion Constructeurs

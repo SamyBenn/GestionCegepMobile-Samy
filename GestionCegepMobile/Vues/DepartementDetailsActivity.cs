@@ -131,6 +131,15 @@ namespace GestionCegepMobile.Vues
                     StartActivity(activiteEnseignants);
                     break;
 
+                case Resource.Id.Cours:
+                    Intent activiteCours = new Intent(this, typeof(CoursActivity));
+                    //On initialise les paramètres avant de lancer la nouvelle activité.
+                    activiteCours.PutExtra("paramNomCegep", paramNomCegep);
+                    activiteCours.PutExtra("paramNomDepartement", leDepartement.Nom);
+                    //On démarre la nouvelle activité.
+                    StartActivity(activiteCours);
+                    break;
+
                 case Resource.Id.Supprimer:
                     try
                     {
