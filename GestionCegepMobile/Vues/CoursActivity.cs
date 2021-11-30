@@ -75,6 +75,17 @@ namespace GestionCegepMobile.Vues
             paramNomCegep = Intent.GetStringExtra("paramNomCegep");
             paramNomDepartement = Intent.GetStringExtra("paramNomDepartement");
             listViewCours = FindViewById<ListView>(Resource.Id.listViewCours);
+            listViewCours.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) =>
+            {
+                Intent activiteCoursDetails = new Intent(this, typeof(CoursDetailsActivity));
+                //On initialise les paramètres avant de lancer la nouvelle activité.
+                activiteCoursDetails.PutExtra("paramNomCegep", paramNomCegep);
+                activiteCoursDetails.PutExtra("paramNomDepartement", paramNomDepartement);
+                activiteCoursDetails.PutExtra("paramNomCours", listeCours[e.Position].Nom);
+                //On démarre la nouvelle activité.
+                StartActivity(activiteCoursDetails);
+            };
+
             edtNomCours = FindViewById<EditText>(Resource.Id.edtNomInfo);
             edtNoCours = FindViewById<EditText>(Resource.Id.edtNoInfo);
             edtDescriptionCours = FindViewById<EditText>(Resource.Id.edtDescriptionInfo);

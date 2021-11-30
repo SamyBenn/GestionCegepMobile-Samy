@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/tableLayoutCoursModifier">
+        <TableRow
+            android:id="@+id/tableRowNomModifier"
+            android:layout_height="93.0dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Nom :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="0"
+                android:id="@+id/lblNomModifier"
+                android:layout_marginRight="0.0dp"
+                android:layout_marginLeft="0.0dp"
+                android:layout_width="105.0dp"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginTop="0.0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_column="1"
+                android:id="@+id/edtNomModifier"
+                android:layout_height="40.5dp"
+                android:layout_width="202.5dp"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginTop="0.0dp"
+                android:layout_marginRight="0.0dp"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRowNoModifier"
+            android:layout_height="93.0dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="No :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="0"
+                android:id="@+id/lblNoModifier"
+                android:layout_marginRight="0.0dp"
+                android:layout_marginLeft="0.0dp"
+                android:layout_width="105.0dp"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginTop="0.0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_column="1"
+                android:id="@+id/edtNoModifier"
+                android:layout_height="40.5dp"
+                android:layout_width="202.5dp"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginTop="0.0dp"
+                android:layout_marginRight="0.0dp"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRowDescriptionModifier"
+            android:layout_height="93.0dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Description :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="0"
+                android:id="@+id/lblDescriptionModifier"
+                android:layout_marginRight="0.0dp"
+                android:layout_marginLeft="0.0dp"
+                android:layout_width="105.0dp"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginTop="0.0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_column="1"
+                android:id="@+id/edtDescriptionModifier"
+                android:layout_height="40.5dp"
+                android:layout_width="202.5dp"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginTop="0.0dp"
+                android:layout_marginRight="0.0dp"/>
+        </TableRow>
+        
+	</TableLayout>
+	<Button
+		android:text="MODIFIER"
+		android:layout_width="144.5dp"
+		android:layout_height="38.0dp"
+		android:id="@+id/btnModifier"
+		android:layout_marginLeft="125.0dp"
+		android:layout_marginTop="26.0dp"
+		android:layout_marginBottom="0.0dp" />
+</LinearLayout>

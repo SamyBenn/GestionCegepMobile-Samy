@@ -91,6 +91,8 @@
     <Compile Include="Vues\CegepDetailsActivity.cs" />
     <Compile Include="Vues\CegepModifierActivity.cs" />
     <Compile Include="Vues\CoursActivity.cs" />
+    <Compile Include="Vues\CoursDetailsActivity.cs" />
+    <Compile Include="Vues\CoursModifierActivity.cs" />
     <Compile Include="Vues\DepartementDetailsActivity.cs" />
     <Compile Include="Vues\DepartementModifierActivity.cs" />
     <Compile Include="Vues\EnseignantActivity.cs" />
@@ -206,6 +208,15 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\menu\Cours_ActivityMenu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\CoursDetails_Activity.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\CoursModifier_Activity.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\CoursDetails_ActivityMenu.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
