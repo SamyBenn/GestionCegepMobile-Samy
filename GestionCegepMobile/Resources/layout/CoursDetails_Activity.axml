@@ -84,7 +84,7 @@
                 android:layout_marginRight="0.0dp"
                 android:layout_marginLeft="0.0dp"
                 android:layout_width="173.0dp"
-                android:layout_height="35.0dp" />
+                android:layout_height="100dp" />
         </TableRow>
     </TableLayout>
     

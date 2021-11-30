@@ -33,7 +33,8 @@
                 android:layout_width="202.5dp"
                 android:layout_marginBottom="0.0dp"
                 android:layout_marginTop="0.0dp"
-                android:layout_marginRight="0.0dp"/>
+                android:layout_marginRight="0.0dp"
+                android:enabled="false"/>/>
         </TableRow>
         <TableRow
             android:id="@+id/tableRowNoModifier"
@@ -79,9 +80,9 @@
             <EditText
                 android:layout_column="1"
                 android:id="@+id/edtDescriptionModifier"
-                android:layout_height="40.5dp"
+                android:layout_height="100dp"
                 android:layout_width="202.5dp"
-                android:layout_marginBottom="0.0dp"
+                android:layout_marginBottom="11.4dp"
                 android:layout_marginTop="0.0dp"
                 android:layout_marginRight="0.0dp"/>
         </TableRow>
